@@ -1,197 +1,243 @@
 <!-- about-me section -->
 <section class="section about-me" id="aboutme">
     <div class="container">
-        <div class="about-box">
-            <div class="row">
-                <div class="col-lg-6 position-relative">
-                    <div class="image-round"></div>
-                    <div class="about-image p-4 pb-0">
-                        <img src="images/img/about.png" alt class="img-fluid">
+        <div class="row align-items-center">
+
+            <!-- Left Column: Stylized Image -->
+            <div class="col-lg-5 mb-5 mb-lg-0 position-relative">
+                <div class="about-img-wrapper">
+                    <!-- Decorative shapes -->
+                    <div class="about-shape shape-circle"></div>
+                    <div class="about-shape shape-dots"></div>
+
+                    <div class="about-image-card">
+                        <img src="images/img/about.png" alt="Profile" class="img-fluid main-img">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="about-item p-5">
-                        <h2 class="display-5 fw-semibold">About Me</h2>
-                        <p class="text-muted fs-14">As a dedicated Web and
-                            Mobile Applications Engineer, I bring a strong
-                            passion for crafting innovative and high-performance
-                            solutions</p>
-                        <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab"
-                            role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active"
-                                    id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" type="button"
-                                    role="tab" aria-controls="pills-home"
-                                    aria-selected="true">Experience</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab"
-                                    aria-controls="pills-contact"
-                                    aria-selected="false">Education</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active"
-                                id="pills-home" role="tabpanel"
-                                aria-labelledby="pills-home-tab">
-                                <div class="experience">
-                                    <div class="row position-relative">
-                                        <div class="col-2">
-                                            <div class="border-left"></div>
-                                        </div>
-                                        <div class="col-10">
-                                            <div class="mt-4 pt-2">
-                                                <h5>Full Stack Software
-                                                    Engineer</h5>
-                                                <p class="text-muted fs-15">OCP
-                                                    Maintenance Solutions -
-                                                    Internship</p>
-                                                <p class="text-muted fs-12">Jul
-                                                    2023 - Sep 2023</p>
-                                                <ul class="experience-details">
-                                                    <li>Developed an interactive
-                                                        module for industrial
-                                                        equipment diagrams on
-                                                        I-SENSE IoT
-                                                        platform.</li>
-                                                    <li>Collaborated with UI/UX
-                                                        teams to optimize user
-                                                        experience.</li>
-                                                    <li>Frontend development
-                                                        with React, focusing on
-                                                        performance.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="mt-4 pt-2">
-                                                <h5>Web & Mobile Application
-                                                    Developer</h5>
-                                                <p
-                                                    class="text-muted fs-15">Maroc
-                                                    Generation Agency -
-                                                    Internship</p>
-                                                <p class="text-muted fs-12">Jul
-                                                    2023 - Sep 2023</p>
-                                                <ul class="experience-details">
-                                                    <li>Designed and developed
-                                                        IPTV app, client
-                                                        dashboard, and static
-                                                        websites.</li>
-                                                    <li>Managed projects using
-                                                        Agile
-                                                        methodologies.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="mt-4 pt-2">
-                                                <h5>Front-End Web Developer</h5>
-                                                <p class="text-muted fs-15">Sté
-                                                    JDI SOFT - Internship</p>
-                                                <p class="text-muted fs-12">Jul
-                                                    - Aug 2022 (2
-                                                    months)<br>Fez-Meknes,
-                                                    Morocco</p>
-                                                <ul class="experience-details">
-                                                    <li>Contributed to social
-                                                        network and dating site
-                                                        development.</li>
-                                                    <li>Ensured project quality
-                                                        through effective
-                                                        teamwork.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="mt-4 pt-2">
-                                                <h5>Intern in IT Testing and
-                                                    Maintenance</h5>
-                                                <p class="text-muted fs-15">INWI
-                                                    - Internship</p>
-                                                <p class="text-muted fs-12">Apr
-                                                    - May 2022 (2
-                                                    months)<br>Fez-Meknes,
-                                                    Morocco</p>
-                                                <ul class="experience-details">
-                                                    <li>Performed functionality
-                                                        tests on IT equipment
-                                                        and network
-                                                        protocols.</li>
-                                                    <li>Gained insights into
-                                                        local and global IT
-                                                        systems.</li>
-                                                    <li>Collaborated to ensure
-                                                        smooth IT infrastructure
-                                                        operations.</li>
-                                                </ul>
-                                            </div>
+            </div>
+
+            <!-- Right Column: Content -->
+            <div class="col-lg-7">
+                <div class="about-card-premium p-4 p-md-5">
+
+                    <div class="about-header mb-4">
+                        <h2 class="display-5 fw-bold mb-2">About Me</h2>
+                        <h5 class="text-primary mb-3">Web & Mobile Applications Engineer</h5>
+                        <p class="text-muted fs-15 lh-lg">
+                            As a dedicated Web and Mobile Applications Engineer, I bring a strong passion for crafting
+                            innovative and high-performance solutions. I specialize in building scalable applications
+                            and ensuring seamless user experiences.
+                        </p>
+                    </div>
+
+                    <!-- Quick Info Chips -->
+                    <div class="quick-info-container d-flex flex-wrap gap-3 mb-5">
+                        <div class="info-chip">
+                            <i class="mdi mdi-map-marker text-primary"></i> <span>Corte, France</span>
+                        </div>
+                        <div class="info-chip">
+                            <i class="mdi mdi-code-tags text-info"></i> <span>Full-Stack & Mobile</span>
+                        </div>
+                        <div class="info-chip">
+                            <i class="mdi mdi-account-check text-success"></i> <span>Available</span>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Tabs -->
+                    <ul class="nav nav-pills custom-pills mb-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-exp-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-exp" type="button" role="tab" aria-controls="pills-exp"
+                                aria-selected="true">Experience</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-edu-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-edu" type="button" role="tab" aria-controls="pills-edu"
+                                aria-selected="false">Education</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <!-- EXPERIENCE TAB -->
+                        <div class="tab-pane fade show active" id="pills-exp" role="tabpanel"
+                            aria-labelledby="pills-exp-tab">
+                            <div class="timeline-section">
+
+                                <!-- 1. Zeendoc -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content card-premium-sm">
+                                        <span class="timeline-date text-primary">Nov 2025 → Présent</span>
+                                        <h5 class="mt-2">Ingénieur Développement Alternant</h5>
+                                        <h6 class="text-muted mb-2">Zeendoc <span class="location-badge"><i
+                                                    class="mdi mdi-map-marker"></i> Ajaccio</span></h6>
+                                        <div class="tags">
+                                            <span class="badge bg-soft-primary text-primary">Full-Stack</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact"
-                                role="tabpanel"
-                                aria-labelledby="pills-contact-tab">
-                                <div class="experience">
-                                    <div class="row position-relative">
-                                        <div class="col-2">
-                                            <div class="border-left"></div>
-                                        </div>
-                                        <div class="col-10">
-                                            <div class="mt-4 pt-2">
-                                                <h5>Euro-Mediterranean
-                                                    University of Fez</h5>
-                                                <p
-                                                    class="text-muted fs-15 mb-0">2024</p>
-                                                <p
-                                                    class="text-muted fs-15 mb-0">Engineer
-                                                    - Web & Mobile Application
-                                                    Engineering</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row position-relative">
-                                        <div class="col-2">
-                                            <div class="border-left"></div>
-                                        </div>
-                                        <div class="col-10">
-                                            <div class="mt-4 pt-2">
-                                                <h5>Euro-Mediterranean
-                                                    University of Fez</h5>
-                                                <p
-                                                    class="text-muted fs-15 mb-0">2021</p>
-                                                <p
-                                                    class="text-muted fs-15">Integrated
-                                                    Preparatory Cycle
-                                                    Engineering training, School
-                                                    of Digital Engineering and
-                                                    Artificial Intelligence -
-                                                    EIDIA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row position-relative">
-                                        <div class="col-2">
-                                            <div class="border-left"></div>
-                                        </div>
-                                        <div class="col-10">
-                                            <div class="mt-4 pt-2">
-                                                <h5>Sidi Lahcen El Youssi High
-                                                    School</h5>
-                                                <p
-                                                    class="text-muted fs-15 mb-0">2019</p>
-                                                <p
-                                                    class="text-muted fs-15">Baccalaureate
-                                                    with international option,
-                                                    Physics - International</p>
-                                            </div>
+
+                                <!-- 2. Maroc Generation Agency -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content card-premium-sm">
+                                        <span class="timeline-date text-primary">Nov 2024 → Juin 2025</span>
+                                        <h5 class="mt-2">Web & Mobile Developer | QA</h5>
+                                        <h6 class="text-muted mb-2">Maroc Generation Agency <span
+                                                class="location-badge"><i class="mdi mdi-map-marker"></i> Fès</span>
+                                        </h6>
+                                        <ul class="experience-details text-muted fs-14 ps-3 mb-2">
+                                            <li>Dev web/mobile & integration</li>
+                                            <li>API + DB Integration</li>
+                                            <li>QA & Bug tracking</li>
+                                        </ul>
+                                        <div class="tags">
+                                            <span class="badge bg-soft-primary text-primary">Web/Mobile</span>
+                                            <span class="badge bg-soft-secondary text-secondary">QA</span>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- 3. TymGroup Business -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content card-premium-sm">
+                                        <span class="timeline-date text-primary">Août 2024 → Oct 2024</span>
+                                        <h5 class="mt-2">Web Developer</h5>
+                                        <h6 class="text-muted mb-2">TymGroup Business</h6>
+                                        <div class="tags">
+                                            <span class="badge bg-soft-primary text-primary">Web Dev</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HIDDEN EXPERIENCES -->
+                                <div class="collapse" id="moreExperience">
+
+                                    <!-- 4. OCP -->
+                                    <div class="timeline-item mt-4">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content card-premium-sm">
+                                            <span class="timeline-date text-primary">Fév 2024 → Juil 2024</span>
+                                            <h5 class="mt-2">Stage PFE : Software Engineer</h5>
+                                            <h6 class="text-muted mb-2">OCP Maintenance Solutions <span
+                                                    class="location-badge"><i class="mdi mdi-map-marker"></i>
+                                                    Safi</span></h6>
+                                            <ul class="experience-details text-muted fs-14 ps-3 mb-2">
+                                                <li>Module IoT interactif</li>
+                                                <li>Focus performance</li>
+                                                <li>Systèmes industriels</li>
+                                            </ul>
+                                            <div class="tags">
+                                                <span class="badge bg-soft-primary text-primary">IoT</span>
+                                                <span class="badge bg-soft-success text-success">Industrial</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5. Maroc Generation Agency (Old) -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content card-premium-sm">
+                                            <span class="timeline-date text-primary">Juil 2023 → Août 2023</span>
+                                            <h5 class="mt-2">Digital Applications Developer</h5>
+                                            <h6 class="text-muted mb-2">Maroc Generation Agency</h6>
+                                        </div>
+                                    </div>
+
+                                    <!-- 6. Sté JDI SOFT -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content card-premium-sm">
+                                            <span class="timeline-date text-primary">Juil 2022 → Août 2022</span>
+                                            <h5 class="mt-2">Front-End Web Developer</h5>
+                                            <h6 class="text-muted mb-2">Sté JDI SOFT</h6>
+                                        </div>
+                                    </div>
+
+                                    <!-- 7. inwi -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content card-premium-sm">
+                                            <span class="timeline-date text-primary">Avr 2022 → Mai 2022</span>
+                                            <h5 class="mt-2">Intern IT Testing</h5>
+                                            <h6 class="text-muted mb-2">inwi</h6>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- End Collapse -->
+
+                            </div> <!-- End Timeline Section -->
+
+                            <!-- Show More Button -->
+                            <div class="text-center mt-2 position-relative z-index-1">
+                                <button class="btn btn-soft-primary btn-sm rounded-pill px-4 show-more-btn"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#moreExperience"
+                                    aria-expanded="false" aria-controls="moreExperience">
+                                    Show More Experience
+                                </button>
                             </div>
                         </div>
+
+                        <!-- EDUCATION TAB -->
+                        <div class="tab-pane fade" id="pills-edu" role="tabpanel" aria-labelledby="pills-edu-tab">
+                            <div class="education-grid">
+
+                                <!-- 1. Master -->
+                                <div class="education-card card-premium-sm">
+                                    <div class="edu-icon mb-3">
+                                        <i class="mdi mdi-school fs-36 text-primary"></i>
+                                    </div>
+                                    <span class="edu-year text-primary fw-bold">2025</span>
+                                    <h5 class="mt-2">Master Informatique</h5>
+                                    <p class="text-muted mb-1 fs-14">Dev Full Stack Web Mobile</p>
+                                    <h6 class="text-dark fs-13">Università di Corsica</h6>
+                                </div>
+
+                                <!-- 2. Engineer Degree -->
+                                <div class="education-card card-premium-sm">
+                                    <div class="edu-icon mb-3">
+                                        <i class="mdi mdi-certificate fs-36 text-secondary"></i>
+                                    </div>
+                                    <span class="edu-year text-secondary fw-bold">2021 – 2024</span>
+                                    <h5 class="mt-2">Diplôme d’ingénieur</h5>
+                                    <p class="text-muted mb-1 fs-14">Web & Mobile</p>
+                                    <h6 class="text-dark fs-13">UEMF</h6>
+                                </div>
+
+                            </div>
+
+                            <!-- HIDDEN EDUCATION -->
+                            <div class="collapse" id="moreEducation">
+                                <div class="education-grid mt-4">
+                                    <!-- 3. Prepa -->
+                                    <div class="education-card card-premium-sm">
+                                        <div class="edu-icon mb-3">
+                                            <i class="mdi mdi-book-open-page-variant fs-36 text-info"></i>
+                                        </div>
+                                        <span class="edu-year text-info fw-bold">2019 – 2021</span>
+                                        <h5 class="mt-2">Classe préparatoire</h5>
+                                        <p class="text-muted mb-1 fs-14">Maths & Informatique</p>
+                                        <h6 class="text-dark fs-13">UEMF</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Show More Button -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-soft-primary btn-sm rounded-pill px-4 show-more-btn"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#moreEducation"
+                                    aria-expanded="false" aria-controls="moreEducation">
+                                    Show More Education
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- end about-me -->
+    </div>
+</section>
+<!-- end about-me -->

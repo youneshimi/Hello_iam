@@ -241,7 +241,7 @@ try {
     animateOut: "fadeOut",
     controlsText: ['&#8592;', '&#8594;'],
     autoplayButtonOutput: false,
-    items:2,
+    items: 2,
     gutter: 30,
     responsive: {
 
@@ -250,7 +250,7 @@ try {
         items: 3
       },
 
-      576:{
+      576: {
         gutter: 30,
         items: 2
       }
@@ -285,7 +285,7 @@ try {
     animateOut: "fadeOut",
     controlsText: ['&#8592;', '&#8594;'],
     autoplayButtonOutput: false,
-    items:2,
+    items: 2,
     gutter: 30,
     responsive: {
 
@@ -294,7 +294,7 @@ try {
         items: 2.5
       },
 
-      576:{
+      576: {
         gutter: 30,
         items: 2
       }
@@ -318,35 +318,35 @@ function validateForm() {
   document.getElementById("error-msg").style.opacity = 0;
   document.getElementById('error-msg').innerHTML = "";
   if (name == "" || name == null) {
-      document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Name*</div>";
-      fadeIn();
-      return false;
+    document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Name*</div>";
+    fadeIn();
+    return false;
   }
   if (email == "" || email == null) {
-      document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Email*</div>";
-      fadeIn();
-      return false;
+    document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Email*</div>";
+    fadeIn();
+    return false;
   }
   if (subject == "" || subject == null) {
-      document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Subject*</div>";
-      fadeIn();
-      return false;
+    document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Subject*</div>";
+    fadeIn();
+    return false;
   }
   if (comments == "" || comments == null) {
-      document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Comments*</div>";
-      fadeIn();
-      return false;
+    document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning'>*Please enter a Comments*</div>";
+    fadeIn();
+    return false;
   }
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("simple-msg").innerHTML = this.responseText;
-          document.forms["myForm"]["name"].value = "";
-          document.forms["myForm"]["email"].value = "";
-          document.forms["myForm"]["subject"].value = "";
-          document.forms["myForm"]["comments"].value = "";
-      }
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("simple-msg").innerHTML = this.responseText;
+      document.forms["myForm"]["name"].value = "";
+      document.forms["myForm"]["email"].value = "";
+      document.forms["myForm"]["subject"].value = "";
+      document.forms["myForm"]["comments"].value = "";
+    }
   };
   xhttp.open("POST", "php/contact.php", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -358,12 +358,82 @@ function fadeIn() {
   var fade = document.getElementById("error-msg");
   var opacity = 0;
   var intervalID = setInterval(function () {
-      if (opacity < 1) {
-          opacity = opacity + 0.5
-          fade.style.opacity = opacity;
-      } else {
-          clearInterval(intervalID);
-      }
+    if (opacity < 1) {
+      opacity = opacity + 0.5
+      fade.style.opacity = opacity;
+    } else {
+      clearInterval(intervalID);
+    }
   }, 200);
 }
+
+
+// ==========================================
+//  SCROLL ANIMATIONS (Added for Portfolio)
+// ==========================================
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const fadeObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+function initScrollAnimations() {
+  const elements = document.querySelectorAll('.timeline-item, .education-card');
+  elements.forEach((el, index) => {
+    el.classList.add('fade-in-section');
+    // Add slight delay for staggered effect
+    el.style.transitionDelay = `${index * 0.1}s`;
+    fadeObserver.observe(el);
+  });
+}
+
+// Watch for partials loading
+const checkContentInterval = setInterval(() => {
+  const timeline = document.querySelector('.timeline-section');
+  if (timeline) {
+    initScrollAnimations();
+    clearInterval(checkContentInterval);
+  }
+}, 300);
+
+// ==========================================
+//  SHOW MORE/LESS TOGGLE LOGIC
+// ==========================================
+document.addEventListener('click', function (e) {
+  if (e.target.matches('.show-more-btn')) {
+    const button = e.target;
+    const targetId = button.getAttribute('data-bs-target');
+    const collapseElement = document.querySelector(targetId);
+
+    if (collapseElement) {
+      // Listen for Bootstrap collapse events
+      collapseElement.addEventListener('shown.bs.collapse', function () {
+        if (targetId.includes('Experience')) {
+          button.textContent = 'Show Less Experience';
+        } else if (targetId.includes('Education')) {
+          button.textContent = 'Show Less Education';
+        }
+      }, { once: true });
+
+      collapseElement.addEventListener('hidden.bs.collapse', function () {
+        if (targetId.includes('Experience')) {
+          button.textContent = 'Show More Experience';
+        } else if (targetId.includes('Education')) {
+          button.textContent = 'Show More Education';
+        }
+      }, { once: true });
+    }
+  }
+});
+
+
 
