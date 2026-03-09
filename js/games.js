@@ -65,7 +65,6 @@
     if (!currentGame) loadGame('bug');
   });
   document.getElementById('game-close').addEventListener('click', closeModal);
-  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
   modal.querySelectorAll('.gm-tab').forEach(btn => {

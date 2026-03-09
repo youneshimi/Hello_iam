@@ -890,12 +890,13 @@
 /* arena */
 #game-arena {
   flex: 1;
-  overflow-y: auto;
+  overflow: hidden;
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   min-height: 320px;
+  position: relative;
 }
 
 /* ── HUD BAR ────────────────────────────────────────────── */
