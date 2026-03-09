@@ -8,12 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
         { placeholder: 'footer-placeholder', file: 'partials/footer.html' }
     ];
 
-    partials.forEach(partial => {
+    const promises = partials.map(partial =>
         fetch(partial.file)
             .then(response => response.text())
             .then(data => {
                 document.getElementById(partial.placeholder).innerHTML = data;
             })
-            .catch(error => console.error(`Error loading ${partial.file}:`, error));
+            .catch(error => console.error(`Error loading ${partial.file}:`, error))
+    );
+
+    Promise.all(promises).then(() => {
+        // Toutes les sections sont chargées — déclencher les animations
+        document.dispatchEvent(new CustomEvent('partialsLoaded'));
     });
 });

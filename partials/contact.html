@@ -1,5 +1,5 @@
 <!-- start contact -->
-<section class="contact pt-5 pb-0" id="contact">
+<section class="contact pt-5 pb-5" id="contact">
     <div class="container">
         <div class="shape-1">
             <img src="images/testi/shape.png" alt="" class="img-fluid">
@@ -9,10 +9,10 @@
                 <div class="col-lg-5">
                     <div class="contact-info">
                         <div class="mb-4">
-                            <h3>Let's Connect</h3>
+                            <h3 class="section-heading-line">Let's Connect</h3>
                         </div>
                         <hr>
-                        <div class="info-content mt-4">
+                        <div class="info-content mt-4" data-reveal="left" data-delay="100">
                             <h6>Address :</h6>
                             <div class="d-flex">
                                 <div class="icon">
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info-content mt-4 pt-2">
+                        <div class="info-content mt-4 pt-2" data-reveal="left" data-delay="200">
                             <h6>Phone :</h6>
                             <div class="d-flex">
                                 <div class="icon">
@@ -34,8 +34,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info-content mt-4 pt-2">
-                            <h6>Support :</h6>
+                        <div class="info-content mt-4 pt-2" data-reveal="left" data-delay="300">
+                            <h6>Email :</h6>
                             <div class="d-flex">
                                 <div class="icon">
                                     <i class="mdi mdi-email-outline fs-24 text-primary"></i>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="custom-form mt-4">
-                        <form action="mailto:ounesshimi@gmail.com" method="post" enctype="text/plain">
+                        <form action="mailto:y.shimiyounes@gmail.com" method="post" enctype="text/plain">
                             <h6 class="mb-0 text-muted">Let's talk</h6>
                             <p id="error-msg" style="opacity: 1;"></p>
                             <div id="simple-msg"></div>
@@ -57,21 +57,21 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <input name="name" id="name" type="text" class="form-control contact-form"
-                                            placeholder="Your name">
+                                            placeholder="Your name" required minlength="2">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <input name="email" id="email" type="email" class="form-control contact-form"
-                                            placeholder="Your email">
+                                            placeholder="Your email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group mt-2">
-                                        <input type="text" class="form-control contact-form" id="subject"
-                                            placeholder="Your Subject..">
+                                        <input type="text" class="form-control contact-form" id="subject" name="subject"
+                                            placeholder="Your Subject.." required>
                                     </div>
                                 </div>
                             </div>
@@ -79,15 +79,15 @@
                                 <div class="col-lg-12">
                                     <div class="form-group mt-2">
                                         <textarea name="comments" id="comments" rows="4"
-                                            class="form-control contact-form h-auto"
-                                            placeholder="Your message..."></textarea>
+                                            class="form-control contact-form h-auto" placeholder="Your message..."
+                                            required minlength="10"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row my-2">
                                 <div class="col-lg-12 d-grid">
                                     <input type="submit" id="submit" class="submitBnt btn btn-rounded btn-primary"
-                                        value="Send Message">
+                                        value="Send Message ✈">
                                 </div>
                             </div>
                         </form>

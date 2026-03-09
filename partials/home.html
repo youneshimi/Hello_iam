@@ -7,13 +7,13 @@
 
     <div class="container position-relative z-index-1">
         <div class="row align-items-center hero-row">
-            <!-- Main Content Column (Centered/Left) -->
-            <div class="col-lg-8 col-md-10 mx-auto mx-lg-0">
+            <!-- Main Content Column -->
+            <div class="col-lg-7 col-md-10 mx-auto mx-lg-0">
 
                 <!-- Glass Card Container -->
                 <div class="hero-glass-card p-4 p-md-5">
 
-                    <!-- Social Icons (Integrated top-right or absolute) -->
+                    <!-- Social Icons -->
                     <div class="hero-social-icons d-flex gap-3 mb-4">
                         <a href="https://www.facebook.com/people/Younes-Shimi/pfbid02tAmCcoGhQR7fzQmn8V22Zt8nyBfUHwxy5Sj2XM89VUnyHKogDrkNqUFr6kkRjE2rl/?mibextid=ZbWKwL"
                             class="social-icon facebook" data-bs-toggle="tooltip" title="Facebook">
@@ -31,45 +31,71 @@
                             data-bs-toggle="tooltip" title="LinkedIn">
                             <i class="mdi mdi-linkedin"></i>
                         </a>
+                        <a href="https://github.com/youneshimi" class="social-icon github" data-bs-toggle="tooltip"
+                            title="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="mdi mdi-github"></i>
+                        </a>
                     </div>
 
                     <h4 class="text-primary fw-medium ls-1 mb-2">Hello, I am</h4>
                     <h1 class="display-3 fw-bold mb-3 text-dark hero-title">Younes Shimi</h1>
 
-                    <!-- Badges -->
+                    <!-- Badges with pop animation -->
                     <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="badge bg-soft-primary text-primary">Full-Stack</span>
-                        <span class="badge bg-soft-secondary text-secondary">Web & Mobile</span>
-                        <span class="badge bg-soft-info text-info">QA Engineer</span>
-                        <span class="badge bg-soft-success text-success">Agile</span>
+                        <span class="badge bg-soft-primary text-primary badge-anim">Full-Stack</span>
+                        <span class="badge bg-soft-secondary text-secondary badge-anim">Web &amp; Mobile</span>
+                        <span class="badge bg-soft-info text-info badge-anim">QA Engineer</span>
+                        <span class="badge bg-soft-success text-success badge-anim">Agile</span>
                     </div>
 
                     <h5 class="text-muted mb-4 lh-base" style="font-weight: 400; max-width: 600px;">
-                        Web and Mobile Applications Engineer passionate about crafting innovative solutions.
-                        Always ready to take on new challenges in the tech world.
+                        <span class="js-typewriter"
+                            data-words="Full-Stack & Mobile Engineer.|Passionate about innovative solutions.|Always ready for new challenges.">
+                            Full-Stack &amp; Mobile Engineer.
+                        </span>
                     </h5>
 
                     <!-- Buttons -->
-                    <div class="d-flex flex-wrap gap-3 mt-4 pt-2">
-                        <a href="Notfound.html" target="_blank" class="btn btn-primary btn-lg px-4 shadow-soft">
+                    <div class="hero-btns d-flex flex-wrap gap-3 mt-4 pt-2">
+                        <a href="Notfound.html" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary btn-lg px-4 shadow-soft">
                             <i class="mdi mdi-file-pdf-outline me-2"></i> My Resume
                         </a>
                         <a href="#contact" class="btn btn-outline-primary btn-lg px-4">
-                            Contact Me
+                            <i class="mdi mdi-send-outline me-2"></i> Contact Me
                         </a>
                     </div>
                 </div>
 
-                <!-- Signature (Outside card or inside, keeping it subtle) -->
+                <!-- Signature -->
                 <div class="sign mt-4 ms-3 opacity-75">
-                    <img src="images/signature/Signature_Logo.png" alt="Signature" class="img-fluid"
+                    <img src="images/signature/Signature_Logo.png" alt="Signature de Younes Shimi" class="img-fluid"
                         style="height: 60px;">
                 </div>
-
             </div>
 
-            <!-- Empty column for balance (visual space) -->
-            <div class="col-lg-4 d-none d-lg-block"></div>
+            <!-- Profile Image Column (desktop only) -->
+            <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center">
+                <div class="hero-profile-wrapper">
+                    <!-- Animated ring -->
+                    <div class="hero-profile-ring"></div>
+                    <!-- Glowing dots -->
+                    <div class="hero-dot hero-dot-1"></div>
+                    <div class="hero-dot hero-dot-2"></div>
+                    <!-- Profile photo -->
+                    <img src="images/img/about.png" alt="Younes Shimi" class="hero-profile-img">
+                    <!-- Floating tech badges -->
+                    <div class="floating-badge floating-badge-1">
+                        <i class="mdi mdi-react text-info"></i> React
+                    </div>
+                    <div class="floating-badge floating-badge-2">
+                        <i class="mdi mdi-nodejs text-success"></i> Node.js
+                    </div>
+                    <div class="floating-badge floating-badge-3">
+                        <i class="mdi mdi-cellphone text-primary"></i> Flutter
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="welcome-text d-none d-md-block">
